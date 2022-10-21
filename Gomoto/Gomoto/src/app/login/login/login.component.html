@@ -1,0 +1,161 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark  fixed-top">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand ms-5 text-white" href="#" style="font-weight: 500; font-size: 25px;"><img src="assets\images\logo_1x.png" alt="" srcset=""></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0 " style="padding-left:17%;">
+
+
+
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle nav-link active text-white " href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                        Home
+
+                    </a>
+
+                    <ul class="dropdown-menu text-white " aria-labelledby="navbarDropdown">
+
+                        <li><a class="dropdown-item" href="#">Food delivery</a></li>
+
+                        <li><a class="dropdown-item" href="#">Water delivery</a></li>
+
+                        <li><a class="dropdown-item" href="#">Pizza time</a></li>
+
+                    </ul>
+
+                </li>
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle text-white ms-3" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+
+                        About us
+
+                    </a>
+
+                    <ul class="dropdown-menu text-white" aria-labelledby="navbarDropdown">
+
+                        <li><a class="dropdown-item" href="#">Testimonials</a></li>
+
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+
+                        <li><a class="dropdown-item" href="#">Gallery</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle text-white ms-3" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+
+                        Catalog
+
+                    </a>
+                    <ul class="dropdown-menu text-dark" aria-labelledby="navbarDropdown">
+
+                        <li><a class="dropdown-item" href="#">Shop</a></li>
+
+                        <li><a class="dropdown-item" href="#">Cart</a></li>
+
+                        <li><a class="dropdown-item" href="#">Checkout</a></li>
+
+                        <li><a class="dropdown-item" href="#">My Account</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li class="nav-item text-white ms-3">
+
+                    <a class="nav-link text-dark" href="#">Contacts</a>
+
+                </li>
+
+
+
+            </ul>
+            <form class="d-flex">
+
+                <input class="form-control me-2 rounded-pill bg-dark text-white" type="search" placeholder="Search"
+                    aria-label="Search">
+
+                <button class=" btn btn-warning rounded-pill " type="submit" id="b1">Search</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<div class="container" style="margin-top:11% ;">
+
+    <div class="row">
+
+        <div class="col-sm-6">
+
+            <img src="assets\images\slider-courier-mask.png" alt="" srcset="" style="width: 80%;">
+
+        </div>
+
+        <div class="col-sm-6 ">
+
+            <h2 class="text-white text-center mt-5">LOG IN TO GO<span class="text-warning">MOTO</span></h2>
+
+            <input type="email" placeholder="Username" class="form-control mt-5 bg-dark text-white">
+
+            <input type="password" placeholder="password" class="form-control mt-4 bg-dark text-white">
+            <div class="row">
+                <div class="col-sm-2 mt-4 bg-warning ms-2" style="width:15% ; border-radius:11px ; padding-top: 6px;" >
+                    <h5 class="text-dark bg-warning " >{{captcha}}</h5>
+                </div>
+                <div class="col-sm-10">
+                    <input type="text" placeholder="captcha" [(ngModel)]="cap" name="cap"  class="form-control w-100 mt-4 bg-dark text-white">
+                </div>
+            </div>
+
+          
+
+            <h6 class="mt-3 text-white"><span><input type="checkbox"></span> Remember Me <span
+                    style="margin-left:22.8em ;">Forgot Password?</span></h6>
+
+
+
+            <div class="text-center">
+
+                <button class="btn btn-warning mt-4 text" (click)="login()" style="padding:8px 40px ;">Login</button>
+
+
+
+            </div>
+
+            <div class="mt-5">
+
+                <h6 class="text-white text-center">New User to GoMoto?<a class="text-warning" style="text-decoration: none;" href="/register"> Create An
+                        Account</a></h6>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</div>
